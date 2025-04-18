@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spline Test Page</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      height: calc(100% - 100px);
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      padding: 8px;
+      z-index: 10;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Spline Test - Different URLs</h1>
+  <div class="grid">
+    <div class="container">
+      <div class="title">embed.spline.design URL (RECOMMENDED)</div>
+      <iframe 
+        src="https://embed.spline.design/6d6VNgC5lMcLMCX6/" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; vr"
+      ></iframe>
+    </div>
+    <div class="container">
+      <div class="title">Direct URL: scene.splinecode</div>
+      <iframe 
+        src="https://prod.spline.design/6d6VNgC5lMcLMCX6/scene.splinecode" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; vr"
+      ></iframe>
+    </div>
+    <div class="container">
+      <div class="title">My Spline URL</div>
+      <iframe 
+        src="https://my.spline.design/untitled-6d6VNgC5lMcLMCX6/" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; vr"
+      ></iframe>
+    </div>
+    <div class="container">
+      <div class="title">Public URL</div>
+      <iframe 
+        src="https://app.spline.design/file/6d6VNgC5lMcLMCX6/" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; vr"
+      ></iframe>
+    </div>
+  </div>
+</body>
+</html> 
